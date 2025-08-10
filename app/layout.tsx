@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import SeoSchema from '@/components/SeoSchema'
+// import SeoSchema from "@/components/SeoSchema";
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -56,7 +56,10 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://formspree.io" />
-      </head>
+      </head>{/*
+  <SeoSchema />
+*/}
+
       <body className="font-sans antialiased">
         <SeoSchema />
         {children}
